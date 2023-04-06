@@ -52,11 +52,11 @@ Optional
 //Build owner for this build
 //Must be set as a global property in Manage Jenkins->Global Properties with name BUILD_OWNER
 //If this is not set it will default to COR
-def buildOwner
+def buildOwner = 'COR'
 
 //Name of the node to run on
 //Since we're sharing this file at the moment, we check for the BUILD_OWNER global variable and if it's Radical build on master
-def nodeName = 'android-build-box' = 'COR'
+def nodeName = 'android-build-box'
 
 pipeline {
     agent any
