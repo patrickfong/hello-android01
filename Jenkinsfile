@@ -116,6 +116,7 @@ pipeline {
         stage('Sign APK') {
             steps {
                 // Add the required signing steps here. You can use the "sign-apk" plugin and its configuration.
+                sh "echo 'Signing APK'"
             }
         }
 
